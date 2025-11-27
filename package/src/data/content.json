@@ -1,0 +1,342 @@
+{
+  "site": {
+    "name": "DreamSys Technologies",
+    "tagline": "Your Digital Property Manager",
+    "email": "hello@dreamsystechnologies.com.au",
+    "phone": "+61 450106506",
+    "location": "Truganina, Victoria",
+    "serviceArea": "(Servicing all of Australia)"
+  },
+  "home": {
+    "hero": {
+      "title": "Stop test Losing Local Customers to Your Competitors",
+      "subtitle": "We don't just build websites. We manage, fix, and rank your digital presence so you show up #1 on Google Maps.",
+      "primaryButton": {
+        "text": "Get My Free Digital Health Check",
+        "url": "/audit"
+      },
+      "secondaryButton": {
+        "text": "View Our Packages",
+        "url": "/services"
+      },
+      "trustBar": {
+        "text": "Empowering businesses across Melbourne & Truganina",
+        "partners": [
+          { "name": "Google Partner", "icon": "logos:google-icon" },
+          { "name": "WordPress", "icon": "skill-icons:wordpress" },
+          { "name": "Stripe", "icon": "logos:stripe" },
+          { "name": "SSL Secure", "icon": "mdi:shield-lock" }
+        ]
+      }
+    },
+    "problem": {
+      "title": "Is Your Website Gathering Dust?",
+      "subtitle": "You bought a website years ago, but it hasn't been touched since.",
+      "problems": [
+        "You are invisible on Google Maps",
+        "Your site is broken on mobile phones",
+        "Your competitors have more 5-star reviews than you"
+      ],
+      "reality": {
+        "title": "The Reality",
+        "text": "If you aren't managing your digital presence, you are handing money to your competitors."
+      },
+      "solution": {
+        "title": "The Fix",
+        "text": "You don't need a new website. You need a",
+        "highlight": "Digital Property Manager"
+      }
+    },
+    "servicesPreview": {
+      "title": "Simple Plans. No Hidden Fees.",
+      "services": [
+        {
+          "icon": "mdi:shield-check",
+          "title": "Maintenance & Security",
+          "description": "We keep your site safe, fast, and backed up. No more crashes.",
+          "color": "blue"
+        },
+        {
+          "icon": "mdi:google",
+          "title": "Google Ranking (SEO)",
+          "description": "We optimize your keywords so locals find you first.",
+          "color": "green"
+        },
+        {
+          "icon": "mdi:star-circle",
+          "title": "Reputation Management",
+          "description": "We help you get more 5-star reviews and automate your replies.",
+          "color": "orange"
+        }
+      ],
+      "ctaButton": {
+        "text": "View All Packages",
+        "url": "/services"
+      }
+    },
+    "cta": {
+      "title": "Ready to see what's holding you back?",
+      "subtitle": "Get a personalized video report of your website's health. No cost. No pressure.",
+      "button": {
+        "text": "Request Free Audit",
+        "url": "/audit"
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "description": "Simple plans designed to grow your business. Choose the package that fits your needs."
+    },
+    "intro": {
+      "title": "Digital Growth Packages",
+      "subtitle": "Choose the speed you want to grow. No lock-in contracts."
+    },
+    "packages": [
+      {
+        "id": "foundation",
+        "name": "THE FOUNDATION",
+        "title": "Website Maintenance",
+        "price": "$199",
+        "period": "/ month",
+        "bestFor": "Businesses that just want peace of mind",
+        "popular": false,
+        "features": [
+          "Weekly Plugin & Theme Updates",
+          "Daily Cloud Backups",
+          "Security Scanning (Hack Prevention)",
+          "1 Hour of Content Edits (Menu changes, text updates)",
+          "Monthly 'Uptime' Report"
+        ],
+        "buttonText": "Choose Maintenance",
+        "buttonColor": "primary"
+      },
+      {
+        "id": "growth",
+        "name": "THE GROWTH ENGINE",
+        "title": "Local SEO & Optimization",
+        "price": "$597",
+        "period": "/ month",
+        "bestFor": "Businesses that need more phone calls",
+        "popular": true,
+        "features": [
+          "Everything in Maintenance, plus:",
+          "Google Maps Management: We post updates and fight spam listings",
+          "Review System: Automated SMS to customers asking for reviews",
+          "Keyword Optimization: Ranking for terms like 'Mortgage Broker Truganina'",
+          "Missed Call Text-Back: Never lose a lead again"
+        ],
+        "buttonText": "Start Growing",
+        "buttonColor": "green"
+      },
+      {
+        "id": "dominator",
+        "name": "THE DOMINATOR",
+        "title": "Digital Domination",
+        "price": "$1,297",
+        "period": "/ month",
+        "bestFor": "Competitive industries (Real Estate, Migration, Legal)",
+        "popular": false,
+        "features": [
+          "Everything in Growth, plus:",
+          "Social Media Content: 2 Posts + 2 Stories per week",
+          "Blog Content: 2 SEO-Optimized articles per month",
+          "Advanced Link Building: To build site authority",
+          "Monthly Strategy Call: A Zoom meeting to plan your next month"
+        ],
+        "buttonText": "Dominate Your Market",
+        "buttonColor": "orange"
+      }
+    ]
+  },
+  "about": {
+    "hero": {
+      "title": "About DreamSys",
+      "description": "Your trusted digital partner helping local businesses succeed online."
+    },
+    "intro": {
+      "title": "We Bridge the Gap Between Hard Work and Digital Success"
+    },
+    "story": {
+      "title": "Your Local Digital Partner",
+      "paragraphs": [
+        "At DreamSys Technologies, we understand that running a business is hard work. You are busy managing staff, stock, and customers—you don't have time to worry about \"SEO algorithms\" or \"broken plugins.\"",
+        "We noticed a gap in the market: Local businesses were being ignored by big agencies, or sold expensive websites that provided no value.",
+        "We founded DreamSys to change that. We are your Digital Partner. We treat your website like a digital storefront—keeping it clean, inviting, and open for business."
+      ]
+    },
+    "philosophy": {
+      "title": "Why Choose DreamSys?",
+      "items": [
+        {
+          "icon": "mdi:translate",
+          "title": "We Speak Your Language",
+          "description": "No technical jargon. We explain everything in plain English (or Nepali!)."
+        },
+        {
+          "icon": "mdi:chart-line",
+          "title": "We Focus on ROI",
+          "description": "We don't care about 'likes.' We care about phone calls and bookings."
+        },
+        {
+          "icon": "mdi:map-marker",
+          "title": "We Are Local",
+          "description": "Based in Truganina, we understand the local market and community dynamics."
+        }
+      ]
+    },
+    "founder": {
+      "title": "Meet the Founder",
+      "quote": "My goal is simple: To help local business owners leverage technology so they can stop chasing leads and start attracting them."
+    }
+  },
+  "audit": {
+    "hero": {
+      "title": "How Healthy is Your Business Online?",
+      "subtitle": "Get a free, 3-minute video analysis of your website and Google presence."
+    },
+    "form": {
+      "title": "Request Your Free Video Report",
+      "fields": [
+        {
+          "id": "firstName",
+          "label": "First Name",
+          "type": "text",
+          "required": true,
+          "placeholder": "John"
+        },
+        {
+          "id": "businessName",
+          "label": "Business Name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Your Business Name"
+        },
+        {
+          "id": "websiteUrl",
+          "label": "Website URL",
+          "type": "url",
+          "required": true,
+          "placeholder": "https://yourbusiness.com"
+        },
+        {
+          "id": "email",
+          "label": "Email Address",
+          "type": "email",
+          "required": true,
+          "placeholder": "john@yourbusiness.com"
+        },
+        {
+          "id": "phone",
+          "label": "Phone Number",
+          "type": "tel",
+          "required": false,
+          "placeholder": "+61 4XX XXX XXX"
+        }
+      ],
+      "submitButton": "Send Me My Video Report",
+      "disclaimer": "No cost. No pressure. We'll send you a personalized video within 24-48 hours.",
+      "successTitle": "Thank You!",
+      "successMessage": "We've received your request. You'll receive your personalized video report within 24-48 hours."
+    },
+    "benefits": {
+      "title": "What's Inside the Report?",
+      "items": [
+        {
+          "icon": "mdi:traffic-light",
+          "title": "Traffic Light Analysis",
+          "description": "See exactly what is broken (Red) and what is working (Green)."
+        },
+        {
+          "icon": "mdi:speedometer",
+          "title": "Speed Test",
+          "description": "Is your site driving customers away because it loads too slow?"
+        },
+        {
+          "icon": "mdi:account-search",
+          "title": "Competitor Spy",
+          "description": "See why your competitor ranks above you on Google Maps."
+        }
+      ],
+      "note": "Each report is personally reviewed by our team and delivered as a video walkthrough, so you can see exactly what needs attention."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "description": "Let's discuss how we can help grow your business online. We're based in Truganina, Victoria and service all of Australia."
+    },
+    "intro": {
+      "title": "Let's Talk Business",
+      "subtitle": "Whether you have a quick question or want a full strategy session, we are here."
+    },
+    "details": [
+      {
+        "icon": "mdi:map-marker",
+        "title": "Location",
+        "content": "Truganina, Victoria",
+        "subContent": "(Servicing all of Australia)",
+        "link": null
+      },
+      {
+        "icon": "mdi:email",
+        "title": "Email",
+        "content": "info@dreamsystechnologies.com.au",
+        "subContent": null,
+        "link": "mailto:info@dreamsystechnologies.com.au"
+      },
+      {
+        "icon": "mdi:phone",
+        "title": "Phone",
+        "content": "+61 450106506",
+        "subContent": null,
+        "link": "tel:+61450106506"
+      }
+    ],
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Do I need a new website?",
+          "answer": "Not always! We prefer to fix and optimize what you already have to save you money."
+        },
+        {
+          "question": "How long does SEO take?",
+          "answer": "You will see technical fixes immediately. Ranking improvements usually take 3–6 months."
+        },
+        {
+          "question": "Do you work with businesses outside of Melbourne?",
+          "answer": "Yes! We work with clients across Australia digitally."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "About DreamSys Technologies",
+      "description": "We are your Digital Property Manager, helping local businesses succeed online. Based in Truganina, we understand the local market and treat your website like a digital storefront—keeping it clean, inviting, and open for business."
+    },
+    "services": [
+      { "name": "Website Maintenance", "url": "/services" },
+      { "name": "Local SEO", "url": "/services" },
+      { "name": "Reputation Management", "url": "/services" },
+      { "name": "Digital Domination", "url": "/services" }
+    ],
+    "quickLinks": [
+      { "name": "Home", "url": "/" },
+      { "name": "About Us", "url": "/about" },
+      { "name": "Contact", "url": "/contact" },
+      { "name": "Free Audit", "url": "/audit" }
+    ],
+    "legal": [
+      { "name": "Privacy Policy", "url": "#" },
+      { "name": "Terms of Service", "url": "#" }
+    ],
+    "social": [
+      { "name": "Facebook", "icon": "fe:facebook", "url": "#" },
+      { "name": "Twitter", "icon": "fa6-brands:square-twitter", "url": "#" },
+      { "name": "LinkedIn", "icon": "fa6-brands:linkedin", "url": "#" }
+    ],
+    "copyright": "© Copyright 2025. All rights reserved by DreamSys Technologies."
+  }
+}
