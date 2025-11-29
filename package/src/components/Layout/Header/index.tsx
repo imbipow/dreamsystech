@@ -53,13 +53,15 @@ const Header: React.FC = () => {
         sticky
           ? "shadow-lg bg-white"
           : pathUrl === "/"
-            ? "bg-white/95 backdrop-blur-sm shadow-md"
+            ? "bg-blue-900/30 backdrop-blur-md shadow-md"
             : "bg-white shadow-sm"
       }`}
     >
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) flex justify-between lg:items-center xl:gap-16 lg:gap-8 px-4 py-6">
         <Logo />
-        <nav className="hidden lg:flex grow items-center xl:justify-start justify-center space-x-10 text-17 text-midnight_text">
+        <nav className={`hidden lg:flex grow items-center xl:justify-start justify-center space-x-10 text-17 ${
+          !sticky && pathUrl === "/" ? "text-white" : "text-midnight_text"
+        }`}>
           {headerData.map((item, index) => (
             <HeaderLink key={index} item={item} />
           ))}
@@ -75,14 +77,24 @@ const Header: React.FC = () => {
           className="block lg:hidden p-2 rounded-lg"
           aria-label="Toggle mobile menu"
         >
-          <span className="block w-6 h-0.5 bg-midnight_text"></span>
-          <span className="block w-6 h-0.5 bg-midnight_text mt-1.5"></span>
-          <span className="block w-6 h-0.5 bg-midnight_text mt-1.5"></span>
+          <span className={`block w-6 h-0.5 ${!sticky && pathUrl === "/" ? "bg-white" : "bg-midnight_text"}`}></span>
+          <span className={`block w-6 h-0.5 ${!sticky && pathUrl === "/" ? "bg-white" : "bg-midnight_text"} mt-1.5`}></span>
+          <span className={`block w-6 h-0.5 ${!sticky && pathUrl === "/" ? "bg-white" : "bg-midnight_text"} mt-1.5`}></span>
         </button>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {navbarOpen && (
+        <div
+          className="lg:hidden fixed inset-0 bg-black/50 z-[55] transition-opacity duration-300"
+          onClick={() => setNavbarOpen(false)}
+        />
+      )}
+
+      {/* Mobile Menu */}
       <div
         ref={mobileMenuRef}
-        className={`lg:hidden fixed top-0 right-0 h-full w-full bg-white shadow-lg transform transition-transform duration-300 max-w-xs ${
+        className={`lg:hidden fixed top-0 right-0 h-full w-full bg-white shadow-lg transform transition-transform duration-300 max-w-xs z-[60] ${
           navbarOpen ? "-translate-x-0" : "translate-x-full"
         }`}
       >
