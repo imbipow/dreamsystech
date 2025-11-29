@@ -46,8 +46,7 @@ jobs:
           # Upload HTML files with short cache
           aws s3 sync ./package/out s3://${{ secrets.S3_BUCKET_NAME }} --cache-control "max-age=3600,public" --exclude "*" --include "*.html"
 
-      - name: Invalidate CloudFront cache (if using CloudFront)
-        if: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+      - name: Invalidate CloudFront cache
         run: |
           aws cloudfront create-invalidation \
             --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
