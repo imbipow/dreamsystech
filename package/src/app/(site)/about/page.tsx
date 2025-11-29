@@ -1,4 +1,4 @@
-import HeroSub from "@/components/SharedComponents/HeroSub";
+import PageHeader from "@/components/SharedComponents/PageHeader";
 import AboutStory from "@/components/DreamSys/AboutStory";
 import { Metadata } from "next";
 
@@ -8,16 +8,12 @@ export const metadata: Metadata = {
 };
 
 const About = () => {
-  const breadcrumbLinks = [
-    { href: "/", text: "Home" },
-    { href: "/about", text: "About Us" },
-  ];
   return (
     <>
-      <HeroSub
-        title="About DreamSys"
-        description="Your trusted digital partner helping local businesses succeed online."
-        breadcrumbLinks={breadcrumbLinks}
+      <PageHeader
+        title="About DreamSys Technologies"
+        description="Your trusted digital partner helping local businesses transform hard work into online success. Based in Truganina, serving all of Australia."
+        gradient="blue"
       />
       <AboutStory />
     </>

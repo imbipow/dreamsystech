@@ -1,7 +1,7 @@
 import ContactForm from "@/components/Contact/Form";
 import ContactFAQ from "@/components/DreamSys/ContactFAQ";
 import React from "react";
-import HeroSub from "@/components/SharedComponents/HeroSub";
+import PageHeader from "@/components/SharedComponents/PageHeader";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,16 +10,12 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  const breadcrumbLinks = [
-    { href: "/", text: "Home" },
-    { href: "/contact", text: "Contact" },
-  ];
   return (
     <>
-      <HeroSub
-        title="Contact Us"
-        description="Let's discuss how we can help grow your business online. We're based in Truganina, Victoria and service all of Australia."
-        breadcrumbLinks={breadcrumbLinks}
+      <PageHeader
+        title="Let's Grow Your Business Together"
+        description="Get in touch with our team. Whether you have a quick question or want a full digital strategy session, we're here to help. Based in Truganina, servicing all of Australia."
+        gradient="orange"
       />
       <ContactFAQ />
       <ContactForm />

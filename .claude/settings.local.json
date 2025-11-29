@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(aws s3api create-bucket:*)",
+      "Bash(aws s3 website:*)",
+      "Bash(aws s3api put-bucket-policy:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

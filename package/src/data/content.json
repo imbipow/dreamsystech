@@ -22,10 +22,22 @@
       "trustBar": {
         "text": "Empowering businesses across Melbourne & Truganina",
         "partners": [
-          { "name": "Google Partner", "icon": "logos:google-icon" },
-          { "name": "WordPress", "icon": "skill-icons:wordpress" },
-          { "name": "Stripe", "icon": "logos:stripe" },
-          { "name": "SSL Secure", "icon": "mdi:shield-lock" }
+          {
+            "name": "Google Partner",
+            "icon": "logos:google-icon"
+          },
+          {
+            "name": "WordPress",
+            "icon": "skill-icons:wordpress"
+          },
+          {
+            "name": "Stripe",
+            "icon": "logos:stripe"
+          },
+          {
+            "name": "SSL Secure",
+            "icon": "mdi:shield-lock"
+          }
         ]
       }
     },
@@ -317,25 +329,67 @@
       "description": "We are your Digital Property Manager, helping local businesses succeed online. Based in Truganina, we understand the local market and treat your website like a digital storefront—keeping it clean, inviting, and open for business."
     },
     "services": [
-      { "name": "Website Maintenance", "url": "/services" },
-      { "name": "Local SEO", "url": "/services" },
-      { "name": "Reputation Management", "url": "/services" },
-      { "name": "Digital Domination", "url": "/services" }
+      {
+        "name": "Website Maintenance",
+        "url": "/services"
+      },
+      {
+        "name": "Local SEO",
+        "url": "/services"
+      },
+      {
+        "name": "Reputation Management",
+        "url": "/services"
+      },
+      {
+        "name": "Digital Domination",
+        "url": "/services"
+      }
     ],
     "quickLinks": [
-      { "name": "Home", "url": "/" },
-      { "name": "About Us", "url": "/about" },
-      { "name": "Contact", "url": "/contact" },
-      { "name": "Free Audit", "url": "/audit" }
+      {
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "name": "About Us",
+        "url": "/about"
+      },
+      {
+        "name": "Contact",
+        "url": "/contact"
+      },
+      {
+        "name": "Free Audit",
+        "url": "/audit"
+      }
     ],
     "legal": [
-      { "name": "Privacy Policy", "url": "#" },
-      { "name": "Terms of Service", "url": "#" }
+      {
+        "name": "Privacy Policy",
+        "url": "#"
+      },
+      {
+        "name": "Terms of Service",
+        "url": "#"
+      }
     ],
     "social": [
-      { "name": "Facebook", "icon": "fe:facebook", "url": "#" },
-      { "name": "Twitter", "icon": "fa6-brands:square-twitter", "url": "#" },
-      { "name": "LinkedIn", "icon": "fa6-brands:linkedin", "url": "#" }
+      {
+        "name": "Facebook",
+        "icon": "fe:facebook",
+        "url": "#"
+      },
+      {
+        "name": "Twitter",
+        "icon": "fa6-brands:square-twitter",
+        "url": "#"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "fa6-brands:linkedin",
+        "url": "#"
+      }
     ],
     "copyright": "© Copyright 2025. All rights reserved by DreamSys Technologies."
   }

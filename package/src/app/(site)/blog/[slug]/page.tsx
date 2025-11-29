@@ -8,6 +8,13 @@ type Props = {
   params: { slug: string };
 };
 
+export function generateStaticParams() {
+  const posts = getAllPosts(["slug"]);
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 export async function generateMetadata({ params }: any) {
   const data = await params;
   const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);

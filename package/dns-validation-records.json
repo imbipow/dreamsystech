@@ -1,0 +1,30 @@
+{
+  "Changes": [
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet": {
+        "Name": "_4d17651eb456aed48b1e026f300c29b9.dreamsystech.com.au.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "_e994ba0bc8a62af01681cacb14eb31ec.jkddzztszm.acm-validations.aws."
+          }
+        ]
+      }
+    },
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet": {
+        "Name": "_25680972a0df8c5442429e6b41576899.www.dreamsystech.com.au.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "_b0e88171e341e4057478916a38750958.jkddzztszm.acm-validations.aws."
+          }
+        ]
+      }
+    }
+  ]
+}
