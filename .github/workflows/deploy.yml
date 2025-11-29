@@ -19,11 +19,14 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+          cache-dependency-path: 'package/package-lock.json'
 
       - name: Install dependencies
+        working-directory: ./package
         run: npm ci
 
       - name: Build Next.js static export
+        working-directory: ./package
         run: npm run build
         env:
           NEXT_PUBLIC_FORM_EMAIL: ${{ secrets.FORM_EMAIL }}
@@ -39,9 +42,9 @@ jobs:
       - name: Deploy to S3
         run: |
           # Upload non-HTML files with long cache
-          aws s3 sync ./out s3://${{ secrets.S3_BUCKET_NAME }} --delete --cache-control "max-age=31536000,public" --exclude "*.html"
+          aws s3 sync ./package/out s3://${{ secrets.S3_BUCKET_NAME }} --delete --cache-control "max-age=31536000,public" --exclude "*.html"
           # Upload HTML files with short cache
-          aws s3 sync ./out s3://${{ secrets.S3_BUCKET_NAME }} --cache-control "max-age=3600,public" --exclude "*" --include "*.html"
+          aws s3 sync ./package/out s3://${{ secrets.S3_BUCKET_NAME }} --cache-control "max-age=3600,public" --exclude "*" --include "*.html"
 
       - name: Invalidate CloudFront cache (if using CloudFront)
         if: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID != '' }}
