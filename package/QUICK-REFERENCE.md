@@ -2,6 +2,9 @@
 
 ## 🔗 Important Links
 
+- **🌐 Live Website**: https://dreamsystech.com.au
+- **🌐 WWW**: https://www.dreamsystech.com.au
+- **CloudFront**: https://d1gw6j6kqgepye.cloudfront.net
 - **S3 Website**: http://dreamsystech.com.s3-website-ap-southeast-2.amazonaws.com
 - **Google Drive Content**: https://drive.google.com/file/d/1rBGPr7qSDz5SWKwthips60t2WaxwMEEY/view
 
@@ -15,7 +18,7 @@
 | `S3_BUCKET_NAME` | `dreamsystech.com` |
 | `FORM_EMAIL` | `imbpow@gmail.com` |
 | `CONTENT_JSON_URL` | `https://drive.google.com/uc?export=download&id=1rBGPr7qSDz5SWKwthips60t2WaxwMEEY` |
-| `CLOUDFRONT_DISTRIBUTION_ID` | (Add after CloudFront setup) |
+| `CLOUDFRONT_DISTRIBUTION_ID` | `E16TNO0K9X04XA` |
 
 ## 🚀 Quick Commands
 
