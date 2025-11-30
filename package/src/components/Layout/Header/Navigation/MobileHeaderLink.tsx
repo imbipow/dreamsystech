@@ -2,18 +2,35 @@ import { useState } from "react";
 import Link from "next/link";
 import { HeaderItem } from "../../../../types/menu";
 
-const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
+interface MobileHeaderLinkProps {
+  item: HeaderItem;
+  onLinkClick: () => void;
+}
+
+const MobileHeaderLink: React.FC<MobileHeaderLinkProps> = ({ item, onLinkClick }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
 
-  const handleToggle = () => {
-    setSubmenuOpen(!submenuOpen);
+  const handleToggle = (e: React.MouseEvent) => {
+    if (item.submenu) {
+      e.preventDefault();
+      setSubmenuOpen(!submenuOpen);
+    }
+  };
+
+  const handleLinkClick = () => {
+    if (!item.submenu) {
+      onLinkClick();
+    }
   };
 
   return (
     <div className="relative w-full">
       <Link
         href={item.href}
-        onClick={item.submenu ? handleToggle : undefined}
+        onClick={(e) => {
+          handleToggle(e);
+          handleLinkClick();
+        }}
         className="flex items-center justify-between w-full py-2 text-black focus:outline-hidden"
       >
         {item.label}
@@ -41,6 +58,7 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
             <Link
               key={index}
               href={subItem.href}
+              onClick={onLinkClick}
               className="block py-2 text-midnight_text hover:bg-primary hover:text-white "
             >
               {subItem.label}

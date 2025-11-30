@@ -48,20 +48,17 @@ const Header: React.FC = () => {
   }, [navbarOpen]);
 
   return (
+    <>
     <header
       className={`fixed h-24 top-0 py-1 z-50 w-full transition-all ${
         sticky
           ? "shadow-lg bg-white"
-          : pathUrl === "/"
-            ? "bg-blue-900/30 backdrop-blur-md shadow-md"
-            : "bg-white shadow-sm"
+          : "bg-white shadow-sm"
       }`}
     >
       <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) flex justify-between lg:items-center xl:gap-16 lg:gap-8 px-4 py-6">
         <Logo />
-        <nav className={`hidden lg:flex grow items-center xl:justify-start justify-center space-x-10 text-17 ${
-          !sticky && pathUrl === "/" ? "text-white" : "text-midnight_text"
-        }`}>
+        <nav className="hidden lg:flex grow items-center xl:justify-start justify-center space-x-10 text-17 text-midnight_text">
           {headerData.map((item, index) => (
             <HeaderLink key={index} item={item} />
           ))}
@@ -77,25 +74,26 @@ const Header: React.FC = () => {
           className="block lg:hidden p-2 rounded-lg"
           aria-label="Toggle mobile menu"
         >
-          <span className={`block w-6 h-0.5 ${!sticky && pathUrl === "/" ? "bg-white" : "bg-midnight_text"}`}></span>
-          <span className={`block w-6 h-0.5 ${!sticky && pathUrl === "/" ? "bg-white" : "bg-midnight_text"} mt-1.5`}></span>
-          <span className={`block w-6 h-0.5 ${!sticky && pathUrl === "/" ? "bg-white" : "bg-midnight_text"} mt-1.5`}></span>
+          <span className="block w-6 h-0.5 bg-midnight_text"></span>
+          <span className="block w-6 h-0.5 bg-midnight_text mt-1.5"></span>
+          <span className="block w-6 h-0.5 bg-midnight_text mt-1.5"></span>
         </button>
       </div>
+    </header>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay - Outside header for proper z-index stacking */}
       {navbarOpen && (
         <div
-          className="lg:hidden fixed inset-0 bg-black/50 z-[55] transition-opacity duration-300"
+          className="lg:hidden fixed inset-0 bg-black/60 z-[100] transition-opacity duration-300"
           onClick={() => setNavbarOpen(false)}
         />
       )}
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Outside header for proper z-index stacking */}
       <div
         ref={mobileMenuRef}
-        className={`lg:hidden fixed top-0 right-0 h-full w-full bg-white shadow-lg transform transition-transform duration-300 max-w-xs z-[60] ${
-          navbarOpen ? "-translate-x-0" : "translate-x-full"
+        className={`lg:hidden fixed top-0 right-0 h-full w-full bg-white shadow-2xl transform transition-transform duration-300 max-w-xs z-[110] ${
+          navbarOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
@@ -124,9 +122,9 @@ const Header: React.FC = () => {
             </svg>
           </button>
         </div>
-        <nav className="flex flex-col items-start p-4">
+        <nav className="flex flex-col items-start p-4 overflow-y-auto h-[calc(100vh-73px)]">
           {headerData.map((item, index) => (
-            <MobileHeaderLink key={index} item={item} />
+            <MobileHeaderLink key={index} item={item} onLinkClick={() => setNavbarOpen(false)} />
           ))}
           <Link
             href="/audit"
@@ -137,7 +135,7 @@ const Header: React.FC = () => {
           </Link>
         </nav>
       </div>
-    </header>
+    </>
   );
 };
 
