@@ -10,15 +10,13 @@ interface MobileHeaderLinkProps {
 const MobileHeaderLink: React.FC<MobileHeaderLinkProps> = ({ item, onLinkClick }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
 
-  const handleToggle = (e: React.MouseEvent) => {
+  const handleClick = (e: React.MouseEvent) => {
     if (item.submenu) {
+      // If has submenu, prevent navigation and toggle submenu
       e.preventDefault();
       setSubmenuOpen(!submenuOpen);
-    }
-  };
-
-  const handleLinkClick = () => {
-    if (!item.submenu) {
+    } else {
+      // If no submenu, close the mobile menu and allow navigation
       onLinkClick();
     }
   };
@@ -27,10 +25,7 @@ const MobileHeaderLink: React.FC<MobileHeaderLinkProps> = ({ item, onLinkClick }
     <div className="relative w-full">
       <Link
         href={item.href}
-        onClick={(e) => {
-          handleToggle(e);
-          handleLinkClick();
-        }}
+        onClick={handleClick}
         className="flex items-center justify-between w-full py-2 text-black focus:outline-hidden"
       >
         {item.label}
